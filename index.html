@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 
-<body>
+<body ng-controller = "subtextCtrl">
     <div id="header">
         <img src="img_Folder/javaicon.png" class="java_icon">
         <b id="project_name">Java Tutorial</b>
@@ -29,8 +29,9 @@
         <div id="searchscreen">
             <img src="img_Folder/javaicon.png" class="javabig">
             <h3 class="what">What Do You Want To Learn?</h3>
-            <input type="text" id="searchbar" placeholder="Search Topics Here..."/>
-            <h3 class="subtext">Start Your Journey Now....</h3>
+            <input type="text" id="searchbar" ng-model="topic" placeholder="Search Topics Here..."/>
+            <h3 class="subtext">OK! Lets start with {{topic}}..</h3>
+            <h3 class="subtext">let the journey begin....</h3>
         </div>
     </div>
     <div id="whyjava">
